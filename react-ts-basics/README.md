@@ -22,9 +22,17 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Course Notes
+
+All React components (built-in components and also your custom components) do accept a special key prop which is used by React to track specific component instances.
+
+For example, the key prop should always be set when outputting a list of components.
+
+This key prop can be set on custom components even if you didn't specify it in your props type!
