@@ -19,7 +19,7 @@ export default function CourseGoal({
     <article>
       <div>
         <h2>{title}</h2>
-        <p>{children}</p>
+        {children}
       </div>
       <button>Delete</button>
     </article>
